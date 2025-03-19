@@ -11,7 +11,7 @@ SQL_DIR="university_db"
 # Array of SQL script filenames (or use a wildcard)
 declare -a SQL_FILES
 #SQL_FILES=("$SQL_DIR"/*.sql)  # Dynamically get all .sql files
-SQL_FILES=("create_and_use_db.sql" "drop_db.sql")  # Static list of filenames
+SQL_FILES=("create_and_use_db.sql" "create_students_table.sql" "alter_students_table.sql") # Array of filenames
 
 # Loop through the SQL files
 for sql_file in "${SQL_FILES[@]}"; do
@@ -46,3 +46,4 @@ done
 echo "Finished executing SQL scripts."
 
 exit 0
+127.0.0.1
